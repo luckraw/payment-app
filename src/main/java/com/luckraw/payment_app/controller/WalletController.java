@@ -3,6 +3,7 @@ package com.luckraw.payment_app.controller;
 import com.luckraw.payment_app.controller.dto.CreateWalletDTO;
 import com.luckraw.payment_app.entity.Wallet;
 import com.luckraw.payment_app.service.WalletService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +19,7 @@ public class WalletController {
     }
 
     @PostMapping("/wallets")
-    public ResponseEntity<Wallet> createWallet(@RequestBody CreateWalletDTO dto) {
+    public ResponseEntity<Wallet> createWallet(@RequestBody @Valid CreateWalletDTO dto) {
         var wallet = walletService.createWallet(dto);
         return ResponseEntity.ok(wallet);
     }
