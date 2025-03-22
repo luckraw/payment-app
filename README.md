@@ -1,7 +1,7 @@
 # Payment-App
 Payment-App é um projeto backend de uma plataforma de pagamentos. Nela é possível depositar e realizar transferências entre dois usuários, tendo dois tipos de usuários, os comuns e os lojistas.
 
-### Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Java 21.
 - Spring boot.
 - Mapeamento de entidades com Jakarta Persistence.
@@ -10,7 +10,7 @@ Payment-App é um projeto backend de uma plataforma de pagamentos. Nela é poss�
 - Tratamento de exceções com ControllerAdvice e Problem Details (RFC 7807).
 - SLF4J para efetuar logs.
 
-### Funcionalidades
+## Funcionalidades
 - Cadastro de uma nova Wallet.
 - Transferências entre usuários com Mocks autenticador e notificador externo.
   
